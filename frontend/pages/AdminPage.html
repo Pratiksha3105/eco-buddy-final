@@ -68,7 +68,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
 function loadReports(){
 
-$.get('http://localhost:5000/api/reports', function(data){
+$.get('https://eco-buddy-backend.onrender.com/api/reports', function(data){
 
 table.clear();
 
@@ -126,7 +126,7 @@ let id=$(this).data('id');
 let status=$(this).val();
 
 $.ajax({
-url:`http://localhost:5000/api/admin/updateStatus/${id}`,
+url:`https://eco-buddy-backend.onrender.com/api/admin/updateStatus/${id}`,
 type:"PUT",
 contentType:"application/json",
 data:JSON.stringify({status}),

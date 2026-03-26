@@ -582,7 +582,7 @@
         formData.append('photos', photoFiles[i]);
     }
 
-    fetch('http://localhost:5000/api/reports', {
+    fetch('https://eco-buddy-backend.onrender.com/api/reports', {
         method: 'POST',
         body: formData
     })
