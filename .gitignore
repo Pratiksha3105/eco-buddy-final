@@ -1,0 +1,21 @@
+# Node modules
+node_modules/
+
+# Python virtual environment
+venv/
+pathway_engine/venv/
+
+# Environment variables
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+node_modules
+backend/node_modules
+backend/myenv
+.env
+uploads
+.ipynb_checkpoints
+*.log
